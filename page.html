@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Hotel Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Digital Hotel Management</h1>
+
+    <!-- Hotel Information Section -->
+    <div id="hotel-info-section">
+      <h2>Welcome to [Hotel Name]</h2>
+      <p>
+        Experience the best hospitality and services at [Hotel Name].
+        Explore our exquisite menu and top-notch amenities designed for your comfort.
+      </p>
+      <p><strong>Location:</strong> [Hotel Address]</p>
+      <p><strong>Contact:</strong> [Hotel Contact Number]</p>
+    </div>
+
+    <!-- Hotel Code / Access Menu Section -->
+    <div id="hotel-code-section">
+      <input type="text" id="hotel-code" placeholder="Enter Hotel Code / Hotel name" />
+      <button id="access-menu-btn">Access Menu</button>
+    </div>
+
+    <!-- Assistance Section -->
+    <div id="assistance-section">
+      <h3>Need Assistance?</h3>
+      <button id="call-assistance-btn">Call Assistance</button>
+    </div>
+
+    <!-- Menu Section -->
+    <div id="menu-section" class="hidden">
+      <button id="back-to-home-btn">Back</button>
+      <h2>Menu and Order Summary</h2>
+
+      <!-- Columns for Menu and Order Summary -->
+      <div class="menu-order-container">
+        <!-- Menu Column -->
+        <div class="menu-column">
+          <h3>Menu</h3>
+          <ul id="menu-list">
+            <!-- Menu items will be dynamically added here -->
+          </ul>
+        </div>
+
+        <!-- Order Summary Column -->
+        <div class="order-summary-column">
+          <h3>Order Summary</h3>
+          <ul id="order-summary">
+            <!-- Order summary will be dynamically updated -->
+          </ul>
+          <p>Total: $<span id="total-price">0.00</span></p>
+          <button id="place-order-btn">Place Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div id="review-section">
+      <h3>Customer Reviews</h3>
+      <div id="reviews-display">
+        <!-- Reviews will be dynamically displayed here -->
+      </div>
+      <h4>Leave a Review</h4>
+      <textarea id="review-input" placeholder="Write your review here..." rows="4" cols="50"></textarea>
+      <br />
+      <button id="submit-review-btn">Submit Review</button>
+    </div>
+
+    <!-- Additional Options Section -->
+    <div id="additional-options-section">
+      <h3>Additional Features</h3>
+      <button id="view-booking-btn">View Booking</button>
+      <button id="offers-btn">Check Offers</button>
+      <button id="feedback-btn">Submit Feedback</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
